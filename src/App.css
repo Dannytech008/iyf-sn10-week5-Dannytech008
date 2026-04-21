@@ -1,0 +1,263 @@
+.app-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  border: 1px solid #d6d3ce;
+  background: linear-gradient(135deg, #fff5e8, #fef9f2);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #2c211a;
+}
+
+.header p {
+  margin: 0.25rem 0 0;
+  color: #6f5d4f;
+}
+
+.header nav {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.header nav a,
+.footer a {
+  color: #5f3b23;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+}
+
+.content-column,
+.sidebar,
+.profile-section,
+#lessons,
+.footer {
+  border: 1px solid #d6d3ce;
+  border-radius: 16px;
+  background: #fffefa;
+}
+
+.content-column,
+.sidebar,
+.profile-section,
+#lessons,
+.footer,
+.user-profile {
+  padding: 1.25rem;
+}
+
+.section-heading h2,
+.user-profile h2,
+#lessons h2,
+.sidebar h3 {
+  margin: 0 0 0.5rem;
+  color: #2c211a;
+}
+
+.search-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin: 1rem 0;
+}
+
+.search-row input,
+.input-group input,
+.input-group textarea,
+.stack-form input,
+.stack-form textarea,
+.todo-entry input {
+  border: 1px solid #c6c2bd;
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  font: inherit;
+}
+
+.create-post {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.create-post h3 {
+  margin: 0;
+}
+
+.post-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.card {
+  border: 1px solid #d8d4ce;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 1rem;
+}
+
+.card-highlight {
+  background: #fff9ee;
+}
+
+.card-title {
+  margin: 0 0 0.65rem;
+}
+
+.post-card h3 {
+  margin: 0 0 0.45rem;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #6f5d4f;
+  font-size: 0.9rem;
+}
+
+.post-actions,
+.btn-row,
+.footer-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.post-actions {
+  margin-top: 0.75rem;
+}
+
+.btn {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #cc5f20;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #f1dfcd;
+  color: #4f3a2c;
+}
+
+.btn-danger {
+  background: #9f2f2f;
+  color: #fff;
+}
+
+.btn-small {
+  padding: 0.4rem 0.65rem;
+  font-size: 0.9rem;
+}
+
+.btn-medium {
+  padding: 0.55rem 0.9rem;
+}
+
+.sidebar ul,
+.todo-list {
+  padding-left: 1.2rem;
+}
+
+.tag-list {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.85rem;
+  background: #f3e6d8;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+}
+
+.profile-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.profile-card,
+.user-card {
+  border: 1px solid #ddd6cf;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0.9rem;
+  margin-top: 0.75rem;
+}
+
+.exercise-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.mini-post {
+  border-left: 3px solid #e5b693;
+  padding-left: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.stack-form {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.todo-entry,
+.lifted-row {
+  display: flex;
+  gap: 0.55rem;
+  align-items: center;
+}
+
+.lifted-row {
+  justify-content: space-between;
+  border-top: 1px solid #ece7e1;
+  padding-top: 0.45rem;
+  margin-top: 0.45rem;
+}
+
+.todo-done {
+  text-decoration: line-through;
+  color: #6d655d;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .main-layout,
+  .profile-section {
+    grid-template-columns: 1fr;
+  }
+}
